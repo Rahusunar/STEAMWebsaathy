@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Product Info{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'kitinfo.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="kit-detail">
+    <img src="{{ product.image.url }}" class="img-fluid" alt="{{ product.name }}">
+    <h3>{{ product.name }}</h3>
+    <h4>Level: {{ product.level }}</h4>
+    <h4>Price: Rs <b>{{ product.price }}</b></h4>
+    <h4>Discount: Rs <b>{{ product.discount }}</b></h4>
+    <p>Description: <!-- Add any description if you have one in your model --> </p>
+    <a href="#" class="btn btn-primary">Add to Cart</a>  <!-- Example of adding to cart -->
+</div>
+{% endblock %}
+
+{% comment %} ="{% url 'add_to_cart' product.id %} {% endcomment %}

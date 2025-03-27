@@ -1,0 +1,148 @@
+<!-- templates/accounts/signup.html -->
+{% comment %} {% extends "base.html" %} {% endcomment %}
+{% load static %}
+{% block title %}
+
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'ustyle/login.css' %}">
+<style>
+    /* General Styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Form Styling */
+    form {
+        background-color: #ffffff;
+        color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: all 0.3s;
+    }
+
+    form input:focus {
+        border-color: #2575fc;
+        box-shadow: 0 0 10px rgba(37, 117, 252, 0.3);
+        outline: none;
+    }
+
+    /* Submit Button */
+    form button {
+        background-color: #6a11cb;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 100%;
+    }
+
+    form button:hover {
+        background-color: #2575fc;
+        box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+        transform: translateY(-3px);
+    }
+
+    form button:active {
+        transform: translateY(0);
+    }
+
+    /* Hover Animation for Form */
+    form:hover {
+        transform: scale(1.02);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        form {
+            padding: 15px;
+        }
+
+        form button {
+            font-size: 1rem;
+        }
+
+        form input {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        form button {
+            font-size: 0.9rem;
+        }
+
+        form input {
+            padding: 8px;
+        }
+    }
+</style>
+{% endblock %}
+{% block content %}
+
+<form method="POST" action="{% url 'signup' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign Up</button>
+</form>
+{% endblock %}

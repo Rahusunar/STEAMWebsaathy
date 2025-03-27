@@ -1,0 +1,80 @@
+{% comment %} {% extends "base.html" %} {% endcomment %}
+{% load static %}
+{% block title %}
+Products
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static "products.css" %}">
+{% endblock %}
+
+{% block content %}
+     <div id="product_detail">
+        <div id="product_img10">
+            <img src="Desktop/project33/media/product/image/imagebook.jpg" alt="" id="img345">
+        </div>
+
+        <div id="product_detail22">
+            <div id="product_detail_name">
+                <p id="name_product223">
+                    {{post.kit_name}}
+                </p>
+            </div>
+            <div id="product_detail_price">
+                <p id="price_product223">
+                    Rs.₹1,000.00 – ₹3,000.00
+                </p>
+            </div>
+            <div id="product_full_detail45">
+                <p id="product_detail_discription">
+    
+        Our STEM Kit makes science interesting & meaningful for your kid. The innovative fun-filled activities help in developing key skills like problem-solving, critical thinking, creativity, curiosity, and more. The kits help in bridging the learning gap by putting the children at the core of the hands-on experience. Your child develops a scientific temperament and takes the leap from being a “User of technology to an Innovator”.
+                </p>
+            </div>
+        </div>
+        <div id="product_detail_form">
+
+        </div>
+    </div>
+
+    <div id="product_detail_benifits">
+        <div id="product_detail_Learn">
+            <div id="product_detail_Learn_img2321">
+                <img loading="lazy" src="https://mystemlabclub.com/wp-content/uploads/2021/03/Learn-1.png" id="product_detail_Learn_img2321774">
+            </div>
+            <p id="product_detail_Learn356">
+                Learn
+            </p>
+            <p id="product_detail_Learn35636">
+                “Educate to Innovate” – Our Program helps to LEARN and unveil the concepts of Science and their application in daily life in an interesting and innovative manner.
+            </p>
+
+        </div>
+
+        <div id="product_detail_Play">
+            <div id="product_detail_Play_img2321">
+                <img loading="lazy" src="https://mystemlabclub.com/wp-content/uploads/2021/03/Play-1.png" id="product_detail_Play_img2321774">
+            </div>
+            <p id="product_detail_Learn356">
+                Play
+            </p>
+
+            <p id="product_detail_Learn35636">
+                “Blending learning with PLAYtime” – The kits are conceptualized & designed as fun-filled activities. The child learns the concept easily while having a hands-on experience.
+            </p>
+        </div>
+
+        <div id="product_detail_Explore">
+            <div id="product_detail_Explore_img2321">
+                <img loading="lazy" src="https://mystemlabclub.com/wp-content/uploads/2021/03/Explore.png" id="product_detail_Explore_img2321774" >
+            </div>
+
+            <p id="product_detail_Learn356">
+                Explore
+            </p>
+
+            <p id="product_detail_Learn35636">
+                “Encouraging young minds”- Enabling the next generation of innovators and enhancing their skills like creativity, critical thinking & problem-solving.
+            </p>
+        </div>
+    </div> 
+    {% endblock %}

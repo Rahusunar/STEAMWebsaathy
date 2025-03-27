@@ -1,0 +1,241 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure no overflow on body or html */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Shift logo 250px to the right */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 250px; /* Shifts logo to the right */
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E53B40;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #333;
+    border-bottom: 2px solid black;
+}
+
+/* Shift account and cart 250px to the left */
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 250px; /* Shifts account and cart to the left */
+}
+
+.cart {
+    position: relative;
+    font-size: 18px;
+    color: #E53B40;
+}
+
+.cart .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+}
+
+.account-btn {
+    padding: 8px 15px;
+    border: 2px dashed #8E8EFF;
+    color: #8E8EFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.account-btn:hover {
+    background-color: #F3F3FF;
+}
+
+/* Hide menu in mobile and show hamburger icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 992px) {
+    /* Reduce margin shifts for smaller screens */
+    .logo {
+        margin-left: 150px; /* Reduce right shift for smaller screens */
+    }
+
+    .action-buttons {
+        margin-right: 150px; /* Reduce left shift */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navbar should use full width */
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    /* Stack logo, nav links, and actions */
+    .logo {
+        margin-left: 0; /* Reset margin for small screens */
+        flex: 1; /* Allow it to take available space */
+        justify-content: flex-start; /* Align left */
+    }
+
+    .logo span {
+        font-size: 20px;
+    }
+
+    /* Hide the nav links by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;  /* Use fixed to prevent overflow */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 10px;
+        z-index: 1;  /* Make sure it stays on top */
+    }
+    
+
+    /* Show menu links when active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Show the hamburger menu icon */
+    .menu-icon {
+        display: block;
+        position: absolute; /* Fixes it within the navbar */
+        top: 10px;  /* Space from the top */
+        right: 20px; /* Space from the right */
+        z-index: 2; /* Ensure it sits above other elements */
+    }
+
+    .action-buttons {
+        margin-right: 0; /* Reset for small screens */
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+}
+
+/* Prevent images from causing horizontal overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling the search bar */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px; /* Add spacing to separate it from navigation */
+}
+
+.search-form input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    width: 180px; /* Adjust width for larger screens */
+    transition: all 0.3s ease;
+}
+
+.search-form input:focus {
+    border-color: #8E8EFF;
+    box-shadow: 0 0 5px rgba(142, 142, 255, 0.5);
+}
+
+.search-form button {
+    padding: 8px 10px;
+    background-color: #8E8EFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #6c6cfc;
+}
+
+/* Ensure proper spacing in responsive design */
+@media (max-width: 992px) {
+    .search-form {
+        margin-left: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-form input {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-form input {
+        width: 100px;
+    }
+}

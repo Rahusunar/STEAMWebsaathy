@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}School Kits{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'schoolkit.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="kitcontainer">
+    <h2>Search Results for "{{ query }}"</h2>
+
+    {% if kit %}
+        {% for kits in kit %}
+            <div class="kit-card">
+                {% if kits.image %}
+                    <img src="{{ kits.image.url }}" class="card-img-top" alt="{{ kits.name }}">
+                {% else %}
+                    <img src="{% static 'default.jpg' %}" class="card-img-top" alt="No Image">
+                {% endif %}
+                <div class="card-body">
+                    <h6 class="card-title">{{ kits.level }}</h6>
+                    <h3 class="card-text">{{ kits.name }}</h3>
+                    <h4 class="card-text">Rs <b>{{ kits.price }}</b></h4>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No kits found matching your search.</p>
+    {% endif %}
+</div>
+{% endblock %}

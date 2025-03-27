@@ -1,0 +1,1095 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+#homebackground{
+    background-image:url(img/background.jpg\\);
+    
+}
+
+@media (max-width: 768px) {
+    #homebackground {
+        flex-direction: column;
+    }
+    .dabba {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .buycards {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+#dabba0{
+    width: 100%;
+    height:70vh ;
+    background-color: aqua;
+    display: flex;
+    margin-top: 0.2%;
+}
+
+
+
+@media  (max-width:1040px){
+    #dabba0{
+        display: inline;
+
+    }
+    
+}
+
+.dabba{
+    width: 50%;
+    height: 70vh;
+   
+    background-color: rgba(32, 59, 209, 0.863);
+}
+#cursor{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+   
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9000;
+
+}
+
+
+ @media  (max-width:1040px){
+.dabba{
+    /* width: 106%; */
+    height: 40vh;
+    width: 100%;
+}
+
+}
+
+#wee{
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Acme';
+    font-size: 45px;
+    color: white;
+    line-height: 1.1em;
+    letter-spacing: 1.8px
+}
+
+#sce{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#btn0{
+    margin-top: 5%;
+    background-color: #62e00d;
+    margin-left: 35%;
+    padding: 3% 5% 3% 5%;
+    font-size: 18px;
+    text-align: center;
+    transition:0.3s;
+    border: 2px dashed white; 
+}
+
+#btn0:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px ,dashad;
+    padding: 3% 6%;
+}
+
+#dabba2{
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+@media  (max-width:1040px){
+    #dabba2{
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 30vh;
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    
+}
+
+
+
+#dabba3{
+    margin-top: 2%;
+    margin-left: 7%;
+    height: 70vh;
+    width:90% ;
+    display: flex;
+}
+
+@media  (max-width:1040px){
+    #dabba3{
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 30vh;
+        margin-left: 0%;
+        margin-top: 0%;
+        display: inline;
+    }
+    
+}
+
+#subdabba3_1{
+    width: 50%;
+    height: 100%;
+    /* line-height: 150%; */
+
+}
+@media  (max-width:1040px){
+    #subdabba3_1{
+        width: 100%;
+
+    }
+    
+}
+
+#img2{
+    width: 500px;
+    height: 30%;
+}
+
+@media  (max-width:1040px){
+    #img2{
+        margin-top: 30px;
+        width: 90%;
+        height: 30%;
+    }
+    
+}
+
+
+
+#with{
+    margin-top: -1%;
+    margin-left: 3%;
+    font-size:22px ;
+    font-weight: 800;
+    font-family: "Verdana",monospace;
+}
+
+@media  (max-width:1040px){
+    #with{
+        font-size: 15px;
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+    
+}
+
+
+li{
+    margin-left: 1%;
+    width: 100%;
+
+    height: 10%;
+    
+}
+
+#subdabba3_2{
+    width: 50%;
+    height: 100%;
+    margin-left:-2%;
+    overflow: hidden;
+    
+}
+#subdabba3_2 video{
+    overflow: hidden;
+}
+
+@media  (max-width:1040px){
+    #subdabba3_2{
+        width: 100%;
+        margin-top: -5%;
+
+    }
+    
+}
+
+
+#vdo1{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+}
+
+
+@media  (max-width:1040px){
+    #vdo1{
+        height: 30vh;
+        width: 100%;
+        margin-top: 10vh;
+        margin-left: 2%;
+    }
+    
+}
+
+#dabbaexp{
+    margin-top: 5%;
+    margin-left: 5%;
+    height:70px;
+    width: 90%;
+    background-color: rgb(69, 51, 170);
+    
+}
+@media  (max-width:1040px){
+    #dabbaexp{
+        height: 4vh;
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+}
+
+
+#explore{
+   
+    text-align: center;
+    font-family: 'Acme';
+    font-weight:bolder;
+    font-size: 50px;
+    color: white;
+
+}
+@media  (max-width:1040px){
+    #explore{
+        font-size: 20px;
+    }
+    
+}
+
+#h0{
+    text-align: center;
+    color: #494343;
+    font-size: 40px;
+    font-family: cursive;
+    margin-top: 5%;
+    font-stretch:wider;
+    font-weight: 800;
+}
+
+
+
+#dabba4{
+    /* background-color: black; */
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    margin-left: 5%;
+}
+
+@media  (max-width:1040px){
+    #dabba4{
+        display: inline;
+    }
+    
+}
+
+#dabba4_1{
+    /* background-color: #4d2fd1; */
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+@media  (max-width:1040px){
+    #dabba4_1{
+       width: 100%;
+       height: 100%;
+    }
+    
+}
+
+
+#concept1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#concept2{
+    font-size: 17px;
+}
+
+
+#dabba4_2{
+    /* background-color: #e62323; */
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+@media  (max-width:1040px){
+    #dabba4_2{
+       width: 100%;
+       height: 100%;
+    }
+    
+}
+
+#learning1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#learning2{
+    font-size: 17px;
+}
+
+
+
+#dabba4_3{
+    /* background-color: #23e643; */
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+@media  (max-width:1040px){
+    #dabba4_3{
+       width: 100%;
+       height: 100%;
+    }
+    
+}
+
+#practical1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#practical2{
+    font-size: 17px;
+}
+
+#dabba4_4{
+    /* background-color: #2336e6; */
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+@media  (max-width:1040px){
+    #dabba4_4{
+       width: 100%;
+       height: 100%;
+    }
+    
+}
+
+#Power1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#Power2{
+    font-size: 17px;
+}
+
+
+/* #gallary{
+    width: 100%;
+    height: 95vh;
+    background-color: aqua;
+    margin-top: 5%;
+}
+
+#gallary_1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Acme", Sans-serif;
+    font-weight: 800;
+    padding-top: 5%;
+}
+
+
+
+#slider{
+    background-color: transparent;
+    padding-top: 2%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.d-block{
+    overflow: hidden;
+} */
+
+
+
+
+.slider-container {
+    width: 80%;
+    max-width: 1200px;
+    height: 500px; /* Set the desired fixed height for the slider */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* Assuming there are three slides */
+    height: 100%; /* Match the container height */
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%; /* Ensure each slide takes full height of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the slider area without distortion */
+    border-radius: 15px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .slider-container {
+        width: 95%;
+        height: 300px; /* Adjust the height for smaller screens */
+    }
+}
+
+
+#latest{
+    
+    width: 100%;
+    height: 110vh;
+    background-image:url(img/blogsbackground.jpg);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #latest {
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+#on{
+    padding-top: 10%;
+    color: #26AF2B;
+    font-family: "Acme", Sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.1em;
+    letter-spacing: 1.8px;
+}
+
+@media screen and (max-width: 768px) {
+    #on {
+        font-size: 30px;
+    }
+}
+
+.card{
+    margin-left: 10%;
+    margin-top: 3%;
+    box-shadow: 10px 10px 5px rgb(138, 150, 153);
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+}
+
+.card:hover{
+    box-shadow: 10px 10px 5px rgb(85, 91, 92);
+    transition: 0.5s;
+}
+.card-title{
+    font-family: "Trebuchet MS", Sans-serif;
+    font-size: 22px;
+    line-height: 1.2em;
+    color: #0170B9;
+}
+#card0{
+   gap: 5px;
+}
+.card{
+    gap: 10px;
+}
+#flex{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* What people say about us */
+
+
+#what0{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+
+
+#what{
+    padding-top: 10%;
+    color: #26AF2B;
+    font-family: "Acme", Sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.1em;
+    letter-spacing: 1.8px;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #what{
+        font-size: 30px;
+    }
+}
+
+
+#saybox{
+    width: 80%;
+    margin-left:10% ;
+    margin-right: 10%;
+    margin-top: 2%;
+    height: 55vh;
+    background-color: transparent;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    #saybox{
+        display: inline;
+    }
+}
+
+
+#saybox1{
+    width: 33%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #saybox1{
+        width: 100%;
+        height: 37%;
+    }
+}
+
+#saybox2{
+    width: 33%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #saybox2{
+        width: 100%;
+        height: 37%;
+    }
+}
+
+#saybox3{
+    width: 33%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #saybox3{
+        width: 100%;
+        height: 37%;
+    }
+}
+
+
+
+/* Benefits For Your Kid */
+
+#benefits{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+#for0101{
+    color: #6E5A8D;
+    font-family: "Acme", Sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.33em;
+    letter-spacing: 0.8px;
+    padding-top: 7%;
+}
+
+@media screen and (max-width: 768px) {
+    #for0101{
+        font-size: 35px;
+        margin-top: 50%;
+
+    }
+}
+
+#yourbox{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50vh;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    #yourbox{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        display: inline;
+    }
+}
+
+#yourbox1{
+    width: 25%;
+    height: 100%;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    #yourbox1{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+#yourbox2{
+    width: 25%;
+    height: 100%;
+    background-color: transparent;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    #yourbox2{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+#yourbox3{
+    width: 25%;
+    height: 100%;
+    background-color: transparent;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    #yourbox3{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+#yourbox4{
+    width: 25%;
+    height: 100%;
+    background-color: transparent;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    #yourbox4{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+
+
+/* At a Glance */
+
+
+#glance{
+    width: 100%;
+    height: 80vh;
+    background-image: url(img/mountain.webp);
+}
+
+@media screen and (max-width: 768px) {
+    #glance{
+        margin-top: 200%;
+        height: 100%;
+        background-image: url(img/mountain.webp);
+    }
+}
+
+#glance100{
+    text-align: center;
+    color: #1FBC2D;
+    font-family: "Acme", Sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.33em;
+    letter-spacing: 1.8px;
+    padding-top: 5%;
+}
+
+
+
+#glance200{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 3%;
+    color: #444444;
+    font-family: "Acme", Sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+@media screen and (max-width: 768px) {
+    #glance200{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+#glance300{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 3%;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    #glance300{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+#explore{
+    background-color: rgba(8, 61, 253, 0.751);
+    height: 18%;
+    width: 100%;
+    margin-top: 0.8%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+
+}
+#explore h2{
+    color: #FFFFFF;
+    font-family: "Acme", Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.1em;
+    letter-spacing: 1.8px;
+    margin-top: 2.5%;
+}
+.background {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f3f3f3; /* Fallback color */
+    width: 100%;
+    height: 80%;
+    overflow-x: hidden;
+}
+
+#buy{
+    height: 100%;
+    width: 100%;
+    margin-left: 14%;
+}
+   
+#buy .img {
+ width: 100%;
+ justify-content: center;
+ margin-left: 13%;
+ margin-top: 4%;
+ 
+}
+/* Selects all images within the .img class */
+.img img {
+    align-items: center;
+    text-align: center;
+    
+    width: 15vw; /* Set your desired width */
+    height: 20vw; /* Set your desired height */
+    object-fit: cover;/* This property maintains the aspect ratio and fills the space */
+    justify-content: space-between;
+    margin-top: 5%;
+    margin: 0.8%;
+}
+#buy{
+    display: flex;
+    position: static;
+    overflow-x: hidden;
+   
+    
+}
+#buy .buycards{
+    
+    height: 65%;
+    width: 16%;
+    justify-content: space-between;
+    overflow-y:hidden;
+    margin: 0.7%;
+    margin-top: 5%;
+    color: #534A4A;
+    font-family: 'Trebuchet MS',sans-serif;
+ 
+}
+
+
+#buy .buycards img{
+    position: sticky;
+    height: 70%;
+}
+#buy .buycards h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -20%;
+    margin-left: 20%;
+    padding-bottom: 8%;
+    width: 60%;
+    font-size: 20px;
+   
+}
+#buy .buycards .faculty{
+    background-color: white;
+  
+}
+#buy .buycards .faculty > svg{
+    height: 4vw;
+}
+#buy #card1 .faculty svg{
+    color: #d9534f;
+    
+}
+#buy #card1 .buytn{
+    background-color: #d9534f;
+}
+#buy #card2 .faculty svg{
+    color: #446FE2;
+     
+   
+}
+#buy #card2 .buytn{
+   
+    
+    background-color:#446FE2;
+}
+#buy #card2 h3{
+    width: 70%;
+}
+#buy #card3 .faculty svg{
+    color: #FF9500;
+}  
+#buy #card3 .buytn{
+    background-color: #FF9500;
+}
+#buy #card4 .faculty svg{
+    color: #11A17F;
+    
+}  
+#buy #card4 .buytn{
+    background-color:  #11A17F;
+}
+#buy .buycards svg{
+    height: 10%;
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 3%;
+}
+.buytn{
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4%;
+    height: 6vh;
+    padding-top: 4%;
+    font-weight: bolder;
+    color: white;
+}
+#buttom {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap when the screen is smaller */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 20px;
+}
+
+#buttom .box {
+    text-align: center;
+    width: 33.33%; /* Default to 3 boxes per row */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#buttom #first {
+    height: 100%;
+    background-color: #4FB1E3;
+}
+#buttom #first button{
+    color: #4FB1E3;
+}
+
+#buttom #second {
+    height: 100%;
+    background-color: #F96962;
+}
+#buttom #second button{
+    color: #F96962;
+}
+#buttom #third {
+    height: 100%;
+    background-color: #11A17F;
+}
+#buttom #third button{
+    color: #11A17F;
+}
+
+
+#buttom .box img {
+    margin-top: 9%;
+    width: 50%; /* Adjust width to be responsive */
+    max-width: 120px;
+}
+
+#buttom .box h2 {
+    color: #FFFFFF;
+    font-family: "Andika", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+#buttom .box .para {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#buttom .box .para p {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-top: 5%;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+#buttom .box button {
+    height: 40px;
+    width: 60%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4%;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 85, 255);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and medium devices with width <= 1024px */
+@media screen and (max-width: 1024px) {
+    #buttom .box {
+        width: 50%; /* Two boxes per row */
+    }
+
+    #buttom .box img {
+        width: 50%; /* Adjust images for medium screens */
+    }
+
+    #buttom .box h2 {
+        font-size: 20px; /* Adjust title size for medium screens */
+    }
+
+    #buttom .box .para p {
+        font-size: 16px; /* Adjust text size */
+    }
+
+    #buttom .box button {
+        width: 70%; /* Adjust button width */
+    }
+}
+
+/* For mobile screens and smaller devices with width <= 768px */
+@media screen and (max-width: 768px) {
+    #buttom {
+        flex-direction: column; /* Stack boxes vertically */
+    }
+
+    #buttom .box {
+        width: 90%; /* One box per row */
+    }
+
+    #buttom .box img {
+        width: 60%; /* Adjust images for small screens */
+    }
+
+    #buttom .box h2 {
+        font-size: 18px; /* Adjust title size */
+    }
+
+    #buttom .box .para p {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    #buttom .box button {
+        width: 80%; /* Adjust button width */
+    }
+}
+

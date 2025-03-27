@@ -1,0 +1,54 @@
+/* Container for all kits */
+#kitcontainer {
+  
+    min-height: 25%;
+    width: 100%;
+    background-image: url('back.png'); /* Set the background image */
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap if they overflow */
+    justify-content: center; /* Space cards evenly */
+    padding: 20px;
+}
+
+/* Styling each card */
+.kit-card {
+    display: flex;
+    flex-direction: column;
+    width: 15%; /* Adjust based on how many cards you want in a row */
+    margin: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card image styling */
+.kit-card img {
+    width: 100%; /* Make the image take the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Card body content styling */
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Button styling */
+.btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,81 @@
+#container {
+    height: 100%;
+    width: 100%;
+    margin-top: 1%;
+
+}
+
+#upperpart {
+    background-image: url('img/coding.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    min-height: 100vh; /* Set the height of the upper part */
+    width: 100%;
+}
+
+#upperpart img {
+    margin-left: 20%; /* Space between the image and the left side */
+    height: 50vh;
+   
+}
+
+.blnce {
+    margin-top: 5%;
+    flex: 1; /* Allow the left and right sections to flex */
+}
+
+.form-container {
+    margin-top: -5%; /* Adjust margin for better positioning */
+    margin-left: 10%; /* Shift form-container to the left */
+    background-color: white;
+    padding: 20px; /* Increased padding for better appearance */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height:auto; /* Let height adjust based on content */
+    max-width: 400px; /* Optional: Limit the width */
+}
+
+input,
+select {
+    width: 100%;
+    height: 40px; /* Adjust height for better usability */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 40px; /* Consistent button height */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+ #lower{
+    height: 100vh;
+    width: 100%;
+    background-color: #1571d4;
+    overflow-x: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+}
+#container #lower #top{
+    color: #ffffff;
+    font-family: 16px Acme,sans-serif;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}

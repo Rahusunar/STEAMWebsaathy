@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}School kits{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{%static 'schoolkit.css'%}">
+{% endblock %}
+{% block content %}
+<div id="kitcontainer">
+  {% for kit in kits %}
+    <div class="kit-card">
+      <img src="{{ kit.image.url }}" class="card-img-top" alt="{{ kit.name }}">
+      <div class="card-body">
+        <h6 class="card-title">{{ kit.level }}</h6>
+        <h3 class="card-text">{{ kit.name }}</h3>
+        <h4 class="card-text"><b>{{ kit.disc }}</b></h4>
+        <a href="{% url 'kitinfo' kit.id %}" class="btn btn-primary">show</a>
+      </div>
+    </div>
+  {% empty %}
+    <p>No products available at the moment.</p>
+  {% endfor %}
+</div>
+
+{% endblock %}

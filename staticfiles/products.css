@@ -1,0 +1,359 @@
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ============================
+   Product Detail Section
+   ============================ */
+#product_detail {
+    width: 100%;
+    height: 500px;
+    background-color: #4924f0;
+    margin-top: 60px;
+    display: flex;
+}
+
+#product_img10 {
+    width: 33.33%;
+    height: 100%;
+}
+
+#img345 {
+    width: 70%;
+    height: 70%;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+
+#product_detail22 {
+    width: 37%;
+    height: 100%;
+    display: inline;  /* If you want this element inline, you can keep it; otherwise remove it */
+}
+
+#product_detail_name,
+#product_detail_price {
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    font-family: "Acme", sans-serif;
+    font-size: 25px;
+}
+
+#name_product223 {
+    padding-top: 4.5%;
+}
+
+#price_product223 {
+    padding-top: 3%;
+}
+
+#product_full_detail45 {
+    width: 100%;
+    height: 80%;
+    text-align: left;
+}
+
+#product_detail_discription {
+    padding-top: 7%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ============================
+   Product Benefits Section
+   ============================ */
+#product_detail_benifits {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-top: 80px;
+}
+
+/* Common styles for each benefit card */
+#product_detail_Learn,
+#product_detail_Play,
+#product_detail_Explore {
+    width: 25%;
+    height: 80%;
+    text-align: center;
+    margin-left: 8%;
+}
+
+/* Adjust margin for the second and third cards */
+#product_detail_Play,
+#product_detail_Explore {
+    margin-left: 5%;
+}
+
+/* Background colors */
+#product_detail_Learn {
+    background-color: rgb(235, 10, 10);
+}
+#product_detail_Play {
+    background-color: rgb(10, 220, 235);
+}
+#product_detail_Explore {
+    background-color: rgb(235, 231, 10);
+}
+
+/* Benefit Images */
+#product_detail_Learn_img2321,
+#product_detail_Play_img2321,
+#product_detail_Explore_img2321 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#product_detail_Learn_img2321774,
+#product_detail_Play_img2321774,
+#product_detail_Explore_img2321774 {
+    width: 60px;
+    height: 110px;
+    margin-top: -17%;
+}
+
+/* Benefit Text */
+#product_detail_Learn356 {
+    margin-top: 10%;
+    color: #FFFFFF;
+    font-family: "Baloo", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+#product_detail_Learn35636 {
+    margin-top: 5%;
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    margin: 0 10%;
+}
+
+/* ============================
+   Responsive Adjustments (max-width: 1100px)
+   ============================ */
+@media (max-width: 1100px) {
+    /* Removed display: inline from #product_detail */
+    #product_detail {
+        /* display: inline; */  /* Removed */
+        height: 600px;
+    }
+    #product_img10 {
+        width: 100%;
+    }
+    #img345 {
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+    #product_detail22 {
+        width: 100%;
+    }
+    #product_detail_name,
+    #product_detail_price {
+        text-align: center;
+    }
+    #product_detail_name {
+        font-size: 40px;
+    }
+    #name_product223 {
+        padding-top: 3%;
+    }
+    #product_detail_price {
+        font-size: 30px;
+    }
+    #product_detail_discription {
+        margin: 0 7%;
+    }
+    /* Removed display: inline from #product_detail_benifits */
+    #product_detail_benifits {
+        width: 100%;
+        /* display: inline; */  /* Removed */
+        margin-top: 20px;
+    }
+    /* Benefit cards adjustments */
+    #product_detail_Learn,
+    #product_detail_Play,
+    #product_detail_Explore {
+        width: 80%;
+        height: 100%;
+        margin: 20% auto 0 auto;
+    }
+    #product_detail_Learn_img2321774 {
+        height: 120px;
+    }
+    #product_detail_Play_img2321774,
+    #product_detail_Explore_img2321774 {
+        width: 70px;
+        height: 120px;
+        margin-top: -17%;
+        margin-left: -5%;
+    }
+}
+
+/* ============================
+   Card & Buy Section Styles
+   ============================ */
+
+/* Card Container */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+}
+
+/* Individual Card */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+}
+.card-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.card-content .price {
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+.card-content .price .discount {
+    color: #ff6347;
+    font-weight: bold;
+}
+.card-content p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* ============================
+   Explore Section
+   ============================ */
+#explore {
+    background-color: rgba(8, 61, 253, 0.751);
+    height: 18%;
+    width: 100%;
+    margin-top: 0.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#explore h2 {
+    color: #FFFFFF;
+    font-family: "Acme", sans-serif;
+    font-size: 4vw;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+/* ============================
+   Background Section
+   ============================ */
+.background {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f3f3f3;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ============================
+   Buy Section
+   ============================ */
+#buy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+.buycards {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 20%;
+    min-width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.buycards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.buycards img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.buycards .faculty {
+    padding: 10px;
+}
+.buycards h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.buycards .buytn {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    margin: 15px auto;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.buycards .buytn:hover {
+    background-color: #e65500;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================
+   Bottom Section
+   ============================ */
+#buttom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+.box {
+    flex: 1 1 30%;
+    padding: 20px;
+    color: white;
+    margin: 10px;
+}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+CodingClass
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static "CodingClass.css" %}">
+{% endblock %}
+{% block content %}
+<div id="container">
+    <div id="upperpart">
+        <div id="right" class="blnce">
+            <img decoding="async" width="600" height="600" src="https://mystemlabclub.com/wp-content/uploads/2021/04/nt2-1.png" class="attachment-full size-full wp-image-2036" alt="nt2 1">
+        </div>
+        <div id="left" class="blnce">
+            <div class="form-container">
+                <h1>Online Coding Classes</h1>
+                <p>Fill this form and we will get back with the details.</p>
+                <form method="POST" id="codingClassForm">
+                    {% csrf_token %}
+                    {{ form.as_p }}  <!-- Render the form fields -->
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
